@@ -23,7 +23,7 @@ public class ConjuntoDeEnteros {
         }
         return false;
     }
-    public boolean añade (int elemento){
+    /*public boolean añade (int elemento){
         if (this.pertenece(elemento) || tam == 10)
             return false;
         for (int i = tam; i < conjunto.length; i++) {
@@ -38,6 +38,6 @@ public class ConjuntoDeEnteros {
             
             }
         }
-    }
+    }*/
     
 }
