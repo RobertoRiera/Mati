@@ -46,6 +46,21 @@ public abstract class Coche {
         this.posicion = posicion;
     }
     public String toString(){
-        return "h";
+        return "El conductor es: "+conductor+", el tipo de coche: "
+                    +tipo+", el color: "+color+" y la posición: "+
+                        posicion.toString();
     }
+    public abstract void avanza();
+    
+    
+    @Override
+    public boolean equals(Object obj){
+        if (obj instanceof Coche){
+            Coche compare = (Coche)obj;
+                return conductor==compare.conductor && tipo==compare.tipo && color==compare.color;
+        }
+        else return false;
+
+    }
+    
 }
